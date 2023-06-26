@@ -10,7 +10,7 @@ import Footer from "./components/Footer";
 
 function App() {
   return (
-    <div className="container mt-2">
+    <div className="">
       <div style={{ backgroundColor: "#E6DFEA" }}>
         <Navbar />
         <Carousel />

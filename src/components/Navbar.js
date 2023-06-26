@@ -12,13 +12,13 @@ function OffcanvasExample() {
         <Navbar
           key={expand}
           expand={expand}
-          className="bg-opacity-75 bg-white my-2 fixed-top text-dark"
+          className="bg-opacity-75 bg-light fixed-top text-dark d-flex justify-content-between"
           style={{
-            height: "47px",
+            height: "45px",
             paddingBottom: "20px"
           }}
         >
-          <div className="container">
+          <div className="container-fluid">
             <Navbar.Brand href="#">JUJU</Navbar.Brand>
             <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${expand}`} />
             <Navbar.Offcanvas
@@ -28,13 +28,7 @@ function OffcanvasExample() {
             >
               <Offcanvas.Header closeButton>
                 <Offcanvas.Title id={`offcanvasNavbarLabel-expand-${expand}`}>
-                  <p
-                    style={{
-                      backgroundColor: "red"
-                    }}
-                  >
-                    JUJU
-                  </p>
+                  JUJU
                 </Offcanvas.Title>
               </Offcanvas.Header>
               <Offcanvas.Body style={{ color: "black", font: "bold" }}>
@@ -42,7 +36,7 @@ function OffcanvasExample() {
                   style={{
                     marginTop: "10px"
                   }}
-                  className="justify-content-center flex-grow-1 pe-9 fw-bold fs-5"
+                  className="justify-content-evenly px-4 bg-info w-50 fw-bold fs-5"
                 >
                   <Nav.Link href="/vault" style={{ color: "black" }}>
                     Vault
@@ -59,11 +53,13 @@ function OffcanvasExample() {
                 </Nav>
                 {/* connect button */}
                 <Button
-                  className="ms-4 text-black fw-bold fs-4 "
+                  className="text-black fw-bold fs-4 "
                   style={{
                     backgroundColor: "#FFB801",
                     border: "none",
-                    marginTop: "12px"
+                    marginTop: "13px",
+                    height: "40px",
+                    paddingTop: "2px"
                   }}
                 >
                   connect

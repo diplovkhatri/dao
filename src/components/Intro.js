@@ -1,9 +1,17 @@
 import React from "react";
 import { Container } from "react-bootstrap";
+import images from "./image1.png";
 
 const Intro = () => {
   return (
-    <Container className="bg-info m-0 p-0">
+    <div
+      className=""
+      style={{
+        backgroundImage: `url(${images})`,
+        backgroundRepeat: "no-repeat",
+        backgroundSize: "contain"
+      }}
+    >
       <Container>
         <div className="d-flex justify-content-center py-5">
           <p className="w-75 fs-3 fw-semibold my-5 py-5 px-4 border border-2 rounded-4 bg-transparent ">
@@ -14,7 +22,7 @@ const Intro = () => {
           </p>
         </div>
       </Container>
-    </Container>
+    </div>
   );
 };
 
