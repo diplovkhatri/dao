@@ -10,13 +10,15 @@ import Footer from "./components/Footer";
 
 function App() {
   return (
-    <div>
-      <Navbar />
-      <Carousel />
-      <Bid />
-      <Intro />
-      <About />
-      <Footer />
+    <div className="container mt-2">
+      <div style={{ backgroundColor: "#E6DFEA" }}>
+        <Navbar />
+        <Carousel />
+        <Bid />
+        <Intro />
+        <About />
+        <Footer />
+      </div>
     </div>
   );
 }

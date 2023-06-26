@@ -12,9 +12,13 @@ function OffcanvasExample() {
         <Navbar
           key={expand}
           expand={expand}
-          className="bg-opacity-25 bg-white fixed-top text-dark"
+          className="bg-opacity-75 bg-white my-2 fixed-top text-dark"
+          style={{
+            height: "47px",
+            paddingBottom: "20px"
+          }}
         >
-          <Container fluid>
+          <div className="container">
             <Navbar.Brand href="#">JUJU</Navbar.Brand>
             <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${expand}`} />
             <Navbar.Offcanvas
@@ -24,11 +28,22 @@ function OffcanvasExample() {
             >
               <Offcanvas.Header closeButton>
                 <Offcanvas.Title id={`offcanvasNavbarLabel-expand-${expand}`}>
-                  JUJU
+                  <p
+                    style={{
+                      backgroundColor: "red"
+                    }}
+                  >
+                    JUJU
+                  </p>
                 </Offcanvas.Title>
               </Offcanvas.Header>
               <Offcanvas.Body style={{ color: "black", font: "bold" }}>
-                <Nav className="justify-content-center flex-grow-1 pe-9 m-2 fw-bold fs-4">
+                <Nav
+                  style={{
+                    marginTop: "10px"
+                  }}
+                  className="justify-content-center flex-grow-1 pe-9 fw-bold fs-5"
+                >
                   <Nav.Link href="/vault" style={{ color: "black" }}>
                     Vault
                   </Nav.Link>
@@ -42,15 +57,20 @@ function OffcanvasExample() {
                     Discourse
                   </Nav.Link>
                 </Nav>
+                {/* connect button */}
                 <Button
-                  className="ms-4 text-black fw-bold fs-3 h-25 "
-                  style={{ backgroundColor: "#FFB801", border: "none" }}
+                  className="ms-4 text-black fw-bold fs-4 "
+                  style={{
+                    backgroundColor: "#FFB801",
+                    border: "none",
+                    marginTop: "12px"
+                  }}
                 >
                   connect
                 </Button>
               </Offcanvas.Body>
             </Navbar.Offcanvas>
-          </Container>
+          </div>
         </Navbar>
       ))}
     </>

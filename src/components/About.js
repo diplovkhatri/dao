@@ -23,7 +23,10 @@ const About = () => {
       {/* {data.map((item) => ({}))} */}
       <Accordion className="">
         <Card className=" border-0">
-          <Card.Header className="bg-transparent border-0">
+          <Card.Header
+            className=" border-0"
+            style={{ backgroundColor: "#E6DFEA" }}
+          >
             <CustomToggle eventKey="0">JUJU</CustomToggle>
           </Card.Header>
           <Accordion.Collapse eventKey="0">
@@ -31,7 +34,10 @@ const About = () => {
           </Accordion.Collapse>
         </Card>
         <Card className="border-0">
-          <Card.Header className="bg-transparent border-0">
+          <Card.Header
+            className=" border-0"
+            style={{ backgroundColor: "#E6DFEA" }}
+          >
             <CustomToggle eventKey="1">Auction</CustomToggle>
           </Card.Header>
           <Accordion.Collapse eventKey="1">
@@ -39,7 +45,10 @@ const About = () => {
           </Accordion.Collapse>
         </Card>
         <Card className=" border-0">
-          <Card.Header className="bg-transparent border-0">
+          <Card.Header
+            className=" border-0"
+            style={{ backgroundColor: "#E6DFEA" }}
+          >
             <CustomToggle eventKey="2">JUJU DAO</CustomToggle>
           </Card.Header>
           <Accordion.Collapse eventKey="2">
@@ -47,7 +56,10 @@ const About = () => {
           </Accordion.Collapse>
         </Card>
         <Card className=" border-0">
-          <Card.Header className="bg-transparent border-0">
+          <Card.Header
+            className=" border-0"
+            style={{ backgroundColor: "#E6DFEA" }}
+          >
             <CustomToggle eventKey="3">NFTs</CustomToggle>
           </Card.Header>
           <Accordion.Collapse eventKey="3">

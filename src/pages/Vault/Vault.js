@@ -1,13 +1,14 @@
 import React from "react";
 import Navbar from "../../components/Navbar";
 import Footer from "../../components/Footer";
-import abs from "./download.jpeg";
+import images from "./image1.png";
 import { LinearGradient } from "react-text-gradients";
 
 const Vault = () => {
   const mystyle = {
-    backgroundImage: `url(${abs})`,
     height: "60vh",
+    width: "auto",
+    backgroundImage: `url(${images})`,
     backgroundSize: "cover",
     backgroundRepeat: "no-repeat"
   };
