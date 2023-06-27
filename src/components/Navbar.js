@@ -12,10 +12,11 @@ function OffcanvasExample() {
         <Navbar
           key={expand}
           expand={expand}
-          className="bg-opacity-75 bg-light fixed-top text-dark d-flex justify-content-between"
+          className="bg-opacity-50 bg-light  text-dark d-flex justify-content-between"
           style={{
             height: "45px",
-            paddingBottom: "20px"
+            paddingBottom: "20px",
+            zIndex: "10000"
           }}
         >
           <div className="container-fluid">
@@ -36,7 +37,7 @@ function OffcanvasExample() {
                   style={{
                     marginTop: "10px"
                   }}
-                  className="justify-content-evenly px-4 bg-info w-50 fw-bold fs-5"
+                  className="justify-content-evenly flex-grow-1 px-4 w-50 fw-bold fs-5"
                 >
                   <Nav.Link href="/vault" style={{ color: "black" }}>
                     Vault

@@ -1,6 +1,8 @@
 import React from "react";
 import { Button, Container } from "react-bootstrap";
 import Bidhistory from "./Bidhistory";
+import crt from "../components/juju111.png";
+import { FaArrowLeft, FaArrowRight } from "react-icons/fa6";
 
 const Bid = () => {
   return (
@@ -10,7 +12,21 @@ const Bid = () => {
         zIndex: "1"
       }}
     >
-      <span>JUJU #567</span>
+      <div className="row d-flex align-items-center h-auto">
+        <div className="col-lg-1 col-md-1 col-sm-1 fs-1 px-1">
+          <Button className="w-50 bg-transparent border-0 text-black fs-2">
+            <FaArrowLeft />
+          </Button>
+
+          <Button className="w-50 bg-transparent border-0 text-black fs-2">
+            <FaArrowRight />
+          </Button>
+        </div>
+        <div className="col-lg-11 col-md-11 col-sm-11 fs-4 ">
+          2nd march 2023
+        </div>
+      </div>
+      <span className="fw-bold fs-1 ms-2">JUJU #567</span>
       <div className="d-flex">
         {/* first div */}
         <div className="flex w-50">
@@ -68,7 +84,19 @@ const Bid = () => {
           </div>
         </div>
         {/* second div */}
-        <div>right</div>
+        <div className="w-50 d-flex justify-content-evenly">
+          <img
+            src={crt}
+            alt=""
+            style={{
+              width: "400px",
+              backgroundRepeat: "no-repeat",
+              backgroundSize: "contain",
+              height: "53.16vh",
+              marginTop: "-90px"
+            }}
+          />
+        </div>
       </div>
     </Container>
   );
