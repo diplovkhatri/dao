@@ -7,6 +7,7 @@ import Bid from "./components/Bid";
 import Intro from "./components/Intro";
 import About from "./components/About";
 import Footer from "./components/Footer";
+import Connect from "./components/connection/Connect";
 
 function App() {
   return (

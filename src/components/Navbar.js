@@ -4,6 +4,7 @@ import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import Offcanvas from "react-bootstrap/Offcanvas";
+import Connect from "./connection/Connect";
 
 function OffcanvasExample() {
   return (
@@ -15,8 +16,7 @@ function OffcanvasExample() {
           className="bg-opacity-50 bg-light  text-dark d-flex justify-content-between"
           style={{
             height: "45px",
-            paddingBottom: "20px",
-            zIndex: "10000"
+            paddingBottom: "20px"
           }}
         >
           <div className="container-fluid">
@@ -53,18 +53,7 @@ function OffcanvasExample() {
                   </Nav.Link>
                 </Nav>
                 {/* connect button */}
-                <Button
-                  className="text-black fw-bold fs-4 "
-                  style={{
-                    backgroundColor: "#FFB801",
-                    border: "none",
-                    marginTop: "13px",
-                    height: "40px",
-                    paddingTop: "2px"
-                  }}
-                >
-                  connect
-                </Button>
+                <Connect />
               </Offcanvas.Body>
             </Navbar.Offcanvas>
           </div>
